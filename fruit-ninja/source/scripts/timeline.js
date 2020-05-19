@@ -11,10 +11,10 @@ var timeline = {};
 // var timer = timeline;
 // <or>
 // var timer = timeline.use( name ).init( 10 ); // to use a new timeline instance
-// 
+//
 // var t = timer.createTask(...);
 // t.stop();
-// 
+//
 // timer.setTimeout(...);
 // timer.setInterval(...);
 // timer.getFPS();
@@ -58,7 +58,7 @@ ClassTimer.prototype.init = function( ms ){
  */
 ClassTimer.prototype.createTask = function( conf ){
 	/* e.g. timer.createTask({
-		start: 500, duration: 2000, data: [a, b, c,..], object: module, 
+		start: 500, duration: 2000, data: [a, b, c,..], object: module,
 		onTimeUpdate: fn(time, a, b, c,..), onTimeStart: fn(a, b, c,..), onTimeEnd: fn(a, b, c,..),
 		recycle: []
 	}); */
@@ -77,7 +77,7 @@ ClassTimer.prototype.createTask = function( conf ){
 /**
  * use a array to recycle the task
  * @param  {Array} queue	be use for recycling task
- * @param  {Task} task 		a task instance		
+ * @param  {Task} task 		a task instance
  * @return {Array}			this queue
  */
 ClassTimer.prototype.taskList = function( queue, task ){
