@@ -19,7 +19,7 @@ var timeline = {};
 // timer.setInterval(...);
 // timer.getFPS();
 
-function ClassTimer(){
+function ClassTimer(){ 
     this.tasks = [];
     this.addingTasks = [];
     this.adding = 0;
